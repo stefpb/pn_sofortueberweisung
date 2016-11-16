@@ -32,4 +32,4 @@ app/locale/nl_NL/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/nl_NL/Paym
 app/locale/pl_PL/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/pl_PL/Paymentnetwork_Pnsofortueberweisung.csv
 app/locale/sk_SK/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/sk_SK/Paymentnetwork_Pnsofortueberweisung.csv
 
-lib/Sofort	lib/Sofort
+lib/Sofort															lib/Sofort
