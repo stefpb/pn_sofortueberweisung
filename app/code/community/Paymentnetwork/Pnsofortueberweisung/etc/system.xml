@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category PayIntelligent
+ * @package Paintelligent_Sofort
+ * @copyright Copyright (c) 2014 PayIntelligent GmbH (http://www.payintelligent.de)
+ * @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+ */
+ -->
+
+<config>
+    <sections>
+        <payment>
+            <groups>
+                <paymentnetwork_pnsofortueberweisung  translate="label">
+                    <label>SOFORT Banking</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <sort_order>100</sort_order>
+                    <fields>
+                        <over_sofort_heading>
+                            <label>About SOFORT Banking</label>
+                            <frontend_model>sofort/adminhtml_payment_config_heading_big</frontend_model>
+                            <sort_order>1</sort_order>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </over_sofort_heading>
+                        <over_sofort_text>
+                            <label><![CDATA[SOFORT Banking is the direct payment system provided by SOFORT AG. SOFORT Banking allows buyers to make a wire transfer of the respective amount during the order process using their online banking account. You as a merchant will receive a real-time confirmation after the SOFORT Banking transaction has been completed. This enables you to immediately ship goods on stock and digital goods - and the buyer will receive the purchased items faster. Learn more about SOFORT Banking and SOFORT AG at <a href='http://www.sofort.com' target='_blank'>sofort.com</a>]]></label>
+                            <sort_order>2</sort_order>
+                            <frontend_model>sofort/adminhtml_payment_config_label</frontend_model>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </over_sofort_text>
+                        <configure_sofort_heading>
+                            <label>Set-up and configuration</label>
+                            <frontend_model>sofort/adminhtml_payment_config_heading_middle</frontend_model>
+                            <sort_order>3</sort_order>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </configure_sofort_heading>
+                        <configure_sofort_text>
+                            <label>Just a few steps are required to use SOFORT Banking:</label>
+                            <sort_order>4</sort_order>
+                            <frontend_model>sofort/adminhtml_payment_config_label</frontend_model>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </configure_sofort_text>
+                        <sofort_project_heading>
+                            <label>Registration</label>
+                            <frontend_model>sofort/adminhtml_payment_config_heading_italic</frontend_model>
+                            <sort_order>5</sort_order>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sofort_project_heading>
+                        <sofort_project_text>
+                            <label><![CDATA[In order to offer SOFORT Banking, you need a customer account with SOFORT AG. You are not a customer yet? <a href='https://www.sofort.com/payment/users/register/'>Register now!</a>]]></label>
+                            <sort_order>6</sort_order>
+                            <frontend_model>sofort/adminhtml_payment_config_label</frontend_model>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sofort_project_text>
+                        <sofort_register_heading>
+                            <label>Project set-up</label>
+                            <frontend_model>sofort/adminhtml_payment_config_heading_italic</frontend_model>
+                            <sort_order>7</sort_order>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sofort_register_heading>
+                        <sofort_register_text>
+                            <label>Please set up a project in the merchant menu of SOFORT AG (please make sure to create a 'SOFORT Gateway Project'). In the next step, you just need your configuration key</label>
+                            <sort_order>8</sort_order>
+                            <frontend_model>sofort/adminhtml_payment_config_label</frontend_model>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sofort_register_text>
+                        <module_settings_heading>
+                            <label>Module configuration</label>
+                            <frontend_model>sofort/adminhtml_payment_config_heading_big</frontend_model>
+                            <sort_order>10</sort_order>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </module_settings_heading>
+                        <base_settings_heading>
+                            <label>Settings</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>16</sort_order>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </base_settings_heading>
+                        <base_settings_comment>
+                            <label>Activate the module and enter the configuration key. SOFORT Banking will be immediately available in your checkout. Additional settings are not required.</label>
+                            <sort_order>17</sort_order>
+                            <frontend_model>sofort/adminhtml_payment_config_label</frontend_model>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </base_settings_comment>
+                        <active translate="label">
+                            <label>Activate SOFORT Banking in your shop</label>
+                            <sort_order>20</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <cofiguration_key translate="label">
+                            <label>Configuration key:</label>
+                            <sort_order>30</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cofiguration_key>
+                        <extended_settings_heading>
+                            <label>Extended settings</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>31</sort_order>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </extended_settings_heading>
+                        <extended_status_settings translate="label">
+                            <label><![CDATA[<script>document.observe("dom:loaded", function() {
+$("row_payment_paymentnetwork_pnsofortueberweisung_display_settings_heading").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_checkout_presentation").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_customer_protection").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_allowspecific").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_specificcountry").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_sort_order").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_usage_settings_heading").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_usage_text_one").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_usage_text_two").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_status_settings_heading").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_order_status").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_order_status_pending_not_credited_yet").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_order_status_loss_not_credited").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_order_status_received_credited").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_create_invoice").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_status_config_text_one").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_status_config_text_two").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_create_creditmemo").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_send_order_confirmation").toggle();
+$("row_payment_paymentnetwork_pnsofortueberweisung_send_mail").toggle();});</script>]]></label>
+                            <sort_order>32</sort_order>
+                            <frontend_model>sofort/adminhtml_payment_config_label_toggle</frontend_model>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </extended_status_settings>
+                        
+                        <display_settings_heading>
+                            <label>Display settings in the checkout</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>35</sort_order>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </display_settings_heading>
+                        <checkout_presentation translate="label">
+                            <label>Display in the checkout:</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>40</sort_order>
+                            <source_model>Paymentnetwork_Pnsofortueberweisung_Model_Source_Checkout_Presentation</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </checkout_presentation>
+                        <customer_protection translate="label">
+                            <label>Customer protection active</label>
+                            <sort_order>50</sort_order>
+                            <tooltip>Please bear in mind that to offer buyer protection to your customers you will need a SOFORT Bank account and activate the feature buyer protection in your project settings</tooltip>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </customer_protection>
+                        <allowspecific translate="label">
+                            <label>Show only for specific countries:</label>
+                            <frontend_type>allowspecific</frontend_type>
+                            <frontend_type>allowspecific</frontend_type>
+                            <sort_order>60</sort_order>
+                            <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </allowspecific>
+                        <specificcountry translate="label">
+                            <label>Show only for specific countries:</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>70</sort_order>
+                            <source_model>adminhtml/system_config_source_country</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </specificcountry>
+                        <sort_order translate="label">
+                            <label>Sort sequence:</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>75</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sort_order>
+                        <usage_settings_heading>
+                            <label>Reference settings</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>76</sort_order>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </usage_settings_heading>
+                        <usage_text_one translate="label">
+                            <label>Reference:</label>
+                            <tooltip><![CDATA[The following placeholders are allowed:<br/><ul>
+<li>Order number:  {{orderid}}</li>
+<li>Customer name: {{name}}</li>
+<li>Date: {{date}}</li>
+<li>Shop name: {{shopname}}</li>
+<li>Transaction: {{transaction}}</li></ul>]]></tooltip>
+                            <sort_order>80</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </usage_text_one>
+                        <usage_text_two translate="label">
+                            <label>Reference 2:</label>
+                            <tooltip><![CDATA[The following placeholders are allowed:<br/><ul>
+<li>Order number:  {{orderid}}</li>
+<li>Customer name: {{name}}</li>
+<li>Date: {{date}}</li>
+<li>Shop name: {{shopname}}</li>
+<li>Transaction: {{transaction}}</li></ul>]]></tooltip>                        
+                            <sort_order>90</sort_order>
+                            <frontend_type>text</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </usage_text_two>
+                        <status_settings_heading>
+                            <label>Status settings</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>95</sort_order>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </status_settings_heading>
+                        <status_config_text_one translate="label">
+                            <label>Please adjust these settings only if you are familiar with status handling of Magento, as this may have unpredictable effects on your shop and other modules might no longer work properly. Additional information can be found in our manual.</label>
+                            <sort_order>115</sort_order>
+                            <frontend_model>sofort/adminhtml_payment_config_label_red</frontend_model>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </status_config_text_one>
+                        <status_config_text_two translate="label">
+                            <label>If the status shouldn't be updated for this event, please choose as status %s</label>
+                            <sort_order>116</sort_order>
+                            <frontend_model>sofort/adminhtml_payment_config_label_status</frontend_model>
+                            <frontend_type>label</frontend_type>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </status_config_text_two>
+                        <order_status>
+                            <label>Temporary order status:</label>
+                            <sort_order>120</sort_order>
+                            <tooltip>Define the status for orders which have not been paid yet.</tooltip>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Paymentnetwork_Pnsofortueberweisung_Model_Source_Order_Status</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status>
+                        <order_status_pending_not_credited_yet translate="label">
+                            <label>Confirmed order status:</label>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>Define the status for orders which have been successfully completed by SOFORT Banking.</tooltip>
+                            <source_model>Paymentnetwork_Pnsofortueberweisung_Model_Source_Order_Status</source_model>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status_pending_not_credited_yet>
+                        <order_status_loss_not_credited translate="label">
+                            <label>Order status for losses:</label>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>(Define the status of orders for which no payment or a different amount has been received on your SOFORT Bank account. A SOFORT Bank account is required.)</tooltip>
+                            <source_model>Paymentnetwork_Pnsofortueberweisung_Model_Source_Order_Status</source_model>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status_loss_not_credited>
+                        <order_status_received_credited translate="label">
+                            <label>Order status for payment receipt:</label>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>(Define the status of orders for which payment has been received on your SOFORT Bank account. A SOFORT Bank account is required.)</tooltip>
+                            <source_model>Paymentnetwork_Pnsofortueberweisung_Model_Source_Order_Status</source_model>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </order_status_received_credited>
+                        <create_invoice translate="label">
+                            <label>Select the time of invoicing</label>
+                            <sort_order>220</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>It is not recommended to change this setting</tooltip>
+                            <source_model>Paymentnetwork_Pnsofortueberweisung_Model_Source_Order_Invoice</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </create_invoice>
+                        <create_creditmemo translate="label">
+                            <label>Create credit memo automatically</label>
+                            <sort_order>230</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <tooltip>A credit memo will be created automatically if a transaction was refunded by using the SOFORT panel.</tooltip>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </create_creditmemo>
+                        <send_order_confirmation translate="label">
+                            <label>Send order confirmation</label>
+                            <sort_order>235</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </send_order_confirmation>
+                        <send_mail translate="label">
+                            <label>Send receipt emails</label>
+                            <sort_order>240</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </send_mail>
+                    </fields>
+                </paymentnetwork_pnsofortueberweisung>
+            </groups>
+        </payment>
+    </sections>
+</config>
