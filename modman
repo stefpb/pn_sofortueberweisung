@@ -1,0 +1,35 @@
+app/code/community/Paymentnetwork									app/code/community/Paymentnetwork
+app/design/adminhtml/base/default/template/paymentnetwork			app/design/adminhtml/base/default/template/paymentnetwork
+app/design/frontend/base/default/template/paymentnetwork			app/design/frontend/base/default/template/paymentnetwork
+app/etc/modules/Paymentnetwork_Pnsofortueberweisung.xml				app/etc/modules/Paymentnetwork_Pnsofortueberweisung.xml
+
+app/locale/cs_CZ/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/cs_CZ/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/de_AT/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/de_AT/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/de_CH/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/de_CH/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/de_DE/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/de_DE/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/en_AU/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/en_AU/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/en_CA/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/en_CA/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/en_GB/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/en_GB/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/en_IE/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/en_IE/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/en_NZ/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/en_NZ/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/en_US/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/en_US/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/en_ZA/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/en_ZA/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/es_AR/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/es_AR/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/es_CL/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/es_CL/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/es_CO/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/es_CO/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/es_CR/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/es_CR/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/es_ES/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/es_ES/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/es_MX/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/es_MX/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/es_PA/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/es_PA/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/es_PE/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/es_PE/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/es_VE/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/es_VE/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/fr_CA/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/fr_CA/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/fr_FR/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/fr_FR/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/hu_HU/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/hu_HU/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/it_CH/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/it_CH/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/it_IT/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/it_IT/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/nl_NL/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/nl_NL/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/pl_PL/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/pl_PL/Paymentnetwork_Pnsofortueberweisung.csv
+app/locale/sk_SK/Paymentnetwork_Pnsofortueberweisung.csv			app/locale/sk_SK/Paymentnetwork_Pnsofortueberweisung.csv
+
+lib/Sofort	lib/Sofort
